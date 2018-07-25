@@ -1,0 +1,223 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+}
+
+.table td,
+.table th {
+  border: 1px solid #000000;
+  padding: 2px;
+  text-align: center;
+
+  @media (min-width: 960px) {
+    padding: 4px;
+  }
+}
+
+.table__number {
+  width: 7.5%;
+}
+
+.table__name {
+  width: 13%;
+  word-wrap: break-word;
+}
+
+.table__email {
+  width: 19%;
+  word-wrap: break-word;
+}
+
+.table__data {
+  width: 11%;
+}
+
+.table__status {
+  width: 11.5%;
+}
+
+.table__service {
+  width: 14.5%;
+}
+
+.table__action {
+  width: 10.5%;
+}
+
+.table__span {
+  display: block;
+}
+
+.table__form {
+  text-align: center;
+}
+
+.table__button {
+  position: relative;
+
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #CCD1D0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #A7D8D6;
+  }
+
+  @media (min-width: 560px) {
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (min-width: 760px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (min-width: 960px) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.table__button--edit {
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/edit.png");
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: 560px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/edit.png");
+      background-size: cover;
+      width: 23px;
+      height: 23px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: 760px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/edit.png");
+      background-size: cover;
+      width: 28px;
+      height: 28px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: 960px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/edit.png");
+      background-size: cover;
+      width: 33px;
+      height: 33px;
+      top: 0;
+      left: 0;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/edit.png");
+      background-size: cover;
+      width: 38px;
+      height: 38px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.table__button--delete {
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/delete.png");
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    left: 1px;
+  }
+
+  @media (min-width: 560px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/delete.png");
+      background-size: cover;
+      width: 21px;
+      height: 21px;
+      top: 1px;
+      left: 1px;
+    }
+  }
+
+  @media (min-width: 760px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/delete.png");
+      background-size: cover;
+      width: 26px;
+      height: 26px;
+      top: 1px;
+      left: 1px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/delete.png");
+      background-size: cover;
+      width: 31px;
+      height: 31px;
+      top: 1px;
+      left: 1px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/delete.png");
+      background-size: cover;
+      width: 36px;
+      height: 36px;
+      top: 1px;
+      left: 1px;
+    }
+  }
+}
